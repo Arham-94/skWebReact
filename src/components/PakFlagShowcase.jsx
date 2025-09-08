@@ -1,6 +1,6 @@
 import React from "react";
 import "../css/PakFlagShowcase.css";
-import pakFlag from "../assets/pakFlag.jpg"; // <- adjust path to your actual flag image
+import pakFlag from "../assets/pakFLag.jpg"; // <- adjust path to your actual flag image
 
 const PakFlagShowcase = () => {
   return (
