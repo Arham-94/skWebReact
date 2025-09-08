@@ -1,0 +1,53 @@
+.flag-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #000; /* dark gaming vibe */
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.pak-flag {
+  width: 90vw;
+  height: 100vh;
+  object-fit: cover;
+  border-radius: 15px;
+  animation: float 3s ease-in-out infinite;
+  box-shadow: 0 0 40px #00ff66;
+}
+.flag-container img {
+  border-radius: 15px;
+}
+
+.legend-message {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  color: #00ff66;
+  text-shadow: 0 0 5px #00ff66;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+@media (max-width: 600px) {
+  .pak-flag {
+    height: auto;
+    width: 100%; /* take full width */
+    height: auto; /* auto adjust height */
+    border-radius: 10px;
+  }
+  .flag-container {
+    height: auto;
+    margin: 0;
+  }
+}
