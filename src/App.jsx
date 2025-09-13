@@ -28,7 +28,7 @@ function App() {
     async function fetchSkImages() {
       try {
         const data = await skImagesCalling();
-        setSkImages(data);
+        setSkImages(data.slice().reverse());
       } catch (error) {
         console.error("Failed to fetch images:", error);
       }
